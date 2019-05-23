@@ -1,12 +1,5 @@
-import Link from 'next/link'
+import withLayout from '../src/components/MyLayout.js'
 
-export default function Index() {
-  return (
-    <div>
-      <Link href="/about">
-        <a>About Page</a>
-      </Link>
-      <p>Hello Next.js</p>
-    </div>
-  )
-}
+const Index = () => <p>Hello Next.js</p>
+
+export default withLayout(Index)
